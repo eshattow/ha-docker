@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/base-python:3.14-alpine3.22-2026.04.0
+ARG BUILD_FROM=ghcr.io/eshattow/base-python:3.14-alpine3.22-riscv64
 ####
 ## Builder stage for ssocr, installs to /opt/ssocr
 FROM ${BUILD_FROM} AS ssocr-builder
