@@ -159,6 +159,7 @@ RUN \
     --mount=type=bind,src=./requirements.txt,dst=/tmp/requirements.txt \
     --mount=type=cache,target=/root/.cache/pip,sharing=locked,id=pip-cache-${BUILD_FROM} \
     pip3 install --only-binary=:all: \
+        --trusted-host ai6fs.net \
         -r /tmp/requirements.txt
 
 WORKDIR /usr/src/
