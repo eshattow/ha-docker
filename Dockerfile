@@ -119,6 +119,7 @@ FROM ${BUILD_FROM}
 
 ARG BUILD_ARCH
 ARG BUILD_FROM
+ARG PIP_EXTRA_INDEX_URL=https://wheels.home-assistant.io/musllinux-index/
 
 ##
 # Install component packages
